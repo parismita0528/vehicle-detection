@@ -53,7 +53,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>vehicle-detection-and-counting/README.md at main · sitanshu422/vehicle-detection-and-counting</title>
+  <title>vehicle-detection-and-counting/vehiclecount.py at main · sitanshu422/vehicle-detection-and-counting</title>
     <meta name="description" content="Contribute to sitanshu422/vehicle-detection-and-counting development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -67,11 +67,11 @@
     
 
   <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/74865051/ws?session=eyJ2IjoiVjMiLCJ1Ijo3NDg2NTA1MSwicyI6NjkwMTU2MzQyLCJjIjozMTUwNDAyNTQzLCJ0IjoxNjIwMDYwMDg3fQ==--8ee6f3a02a5583ec0a57d1ce6803ba0bf8e069636105bb549811cc6b5755f2d9" data-refresh-url="/_alive" data-session-id="3940c32983ad6e39d3a6d92f1fcc80ed470841f5c18eb2d4167039f0b524a07e">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/74865051/ws?session=eyJ2IjoiVjMiLCJ1Ijo3NDg2NTA1MSwicyI6NjkwMTU2MzQyLCJjIjo2NTQ4MDM4MjQsInQiOjE2MjAwNjAxMTh9--c86433fa142e94b13430cac4873224f40c324ba09b1722cdb7908f27f93e709b" data-refresh-url="/_alive" data-session-id="3940c32983ad6e39d3a6d92f1fcc80ed470841f5c18eb2d4167039f0b524a07e">
     <link rel="shared-web-socket-src" href="/socket-worker-3f088aa2.js">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
-  <meta name="request-id" content="CE25:1718:6F179:75A33:609027B6" data-pjax-transient="true" /><meta name="html-safe-nonce" content="07a064c82912c5a038f6cf4d96ff8d9f4aa32ffe9f8106a93a3a7013d5d9ea34" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9zaXRhbnNodTQyMi92ZWhpY2xlLWRldGVjdGlvbi1hbmQtY291bnRpbmciLCJyZXF1ZXN0X2lkIjoiQ0UyNToxNzE4OjZGMTc5Ojc1QTMzOjYwOTAyN0I2IiwidmlzaXRvcl9pZCI6Ijc1OTIxOTY1MjgwNDc4MzI3MzIiLCJyZWdpb25fZWRnZSI6ImFwLXNvdXRoLTEiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true" /><meta name="visitor-hmac" content="9c9b2d46a6e48d1e42c0fc29ba08d70a996c4234735fea941aafd700d886f076" data-pjax-transient="true" />
+  <meta name="request-id" content="CE25:1718:6FD26:76681:609027B6" data-pjax-transient="true" /><meta name="html-safe-nonce" content="07a064c82912c5a038f6cf4d96ff8d9f4aa32ffe9f8106a93a3a7013d5d9ea34" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS9zaXRhbnNodTQyMi92ZWhpY2xlLWRldGVjdGlvbi1hbmQtY291bnRpbmciLCJyZXF1ZXN0X2lkIjoiQ0UyNToxNzE4OjZGRDI2Ojc2NjgxOjYwOTAyN0I2IiwidmlzaXRvcl9pZCI6Ijc1OTIxOTY1MjgwNDc4MzI3MzIiLCJyZWdpb25fZWRnZSI6ImFwLXNvdXRoLTEiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true" /><meta name="visitor-hmac" content="813c75fb48721999add483eed1fc225a1daaa8bf02a324e20e5c4f400a9af21d" data-pjax-transient="true" />
 
     <meta name="hovercard-subject-tag" content="repository:363956363" data-pjax-transient>
 
@@ -110,7 +110,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="OTc3NzU0OGVkZjM4MTdmMzJmMjJlNmY2YTMwYTgwYTgwY2RiZjA5MTllODE0OTJiMTU4YWFmOGRjMGE5NmM4ZXx7InJlbW90ZV9hZGRyZXNzIjoiMTU3LjQxLjc2LjE0OSIsInJlcXVlc3RfaWQiOiJDRTI1OjE3MTg6NkYxNzk6NzVBMzM6NjA5MDI3QjYiLCJ0aW1lc3RhbXAiOjE2MjAwNjAwODcsImhvc3QiOiJnaXRodWIuY29tIn0=">
+      <meta name="js-proxy-site-detection-payload" content="NTM1NDFkM2U5MGNhOWM5MGE3NmZhZTMwYjYwODQwYmQ3MTBhYTY3MzQ0M2I4YTJmYzE2NTRlYWEwYTc0NDdhOXx7InJlbW90ZV9hZGRyZXNzIjoiMTU3LjQxLjc2LjE0OSIsInJlcXVlc3RfaWQiOiJDRTI1OjE3MTg6NkZEMjY6NzY2ODE6NjA5MDI3QjYiLCJ0aW1lc3RhbXAiOjE2MjAwNjAxMTgsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,AUTOCOMPLETE_EMOJIS_IN_MARKDOWN_EDITOR,GITHUB_TOKEN_PERMISSION,ACTIONS_CONCURRENCY_UI">
 
@@ -124,7 +124,7 @@
 
 
 
-    <link rel="canonical" href="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -198,7 +198,7 @@
           spellcheck="false"
           autocomplete="off"
           >
-          <input type="hidden" value="8O72XpvhIbzFbYkNY+DEqOvYZr43s6cgS4Sukto9+I7ksQn1HEk+YVc6MkoaV9AZ8XAwkWdXqGB5yqLxABbWUA==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+          <input type="hidden" value="ot73lnTqKdTSgzoZsvdxmNyT/e69jfgzj72oFkxYnnW2gQg980I2CUDUgV7LQGUpxjurwe1p93O986R1lnOwqw==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
             <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
 
@@ -377,7 +377,7 @@
     <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:workspaces context:user" data-selected-links="/codespaces /codespaces" href="/codespaces">
       Codespaces
 </a>
-      <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:Sponsors" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.button_click&quot;,&quot;payload&quot;:{&quot;button&quot;:&quot;HEADER_SPONSORS_DASHBOARD&quot;,&quot;sponsorable_login&quot;:&quot;parismita0528&quot;,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="1e770264650659017b1603fe441de7d5be4b5703a6652f68d0352682c7e0dedd" data-selected-links=" /sponsors/accounts" href="/sponsors/accounts">Sponsors</a>
+      <a class="js-selected-navigation-item Header-link d-block d-md-none py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, click, Nav menu - item:Sponsors" data-hydro-click="{&quot;event_type&quot;:&quot;sponsors.button_click&quot;,&quot;payload&quot;:{&quot;button&quot;:&quot;HEADER_SPONSORS_DASHBOARD&quot;,&quot;sponsorable_login&quot;:&quot;parismita0528&quot;,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="ff65dffd89870dad6754b0c777ea9dec8aeb6f473cad31741ea6668ec34cbaa2" data-selected-links=" /sponsors/accounts" href="/sponsors/accounts">Sponsors</a>
 
     <a class="Header-link d-block d-md-none mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15" href="/settings/profile">
       Settings
@@ -386,7 +386,7 @@
       <img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/74865051?s=40&amp;v=4" width="20" height="20" alt="@parismita0528" />
       parismita0528
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="4O3HxwcfQh3wBXw6tI4C6tVkFW1JF6PtQkvHiLTU0fVsfhtGZu0dvaMls0Kb70m07L60kTTscPeyRyDDO2aj9w==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="d+SG4YTDgFsugwUi2AgwDhQFD0tIuqRi1aOAGI8WIOb7d1pg5THf+32jylr3aXtQLd+utzVBd3glr2dTAKRS5A==" />
       <button type="submit" class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade-15 d-md-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path></svg>
         Sign out
@@ -410,7 +410,7 @@
       <notification-indicator
         class="js-socket-channel"
         data-test-selector="notifications-indicator"
-        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NzQ4NjUwNTEiLCJ0IjoxNjIwMDYwMDg3fQ==--0e04dcb80d37f452c2c444ab20991fe900ccfe7ec22bb2bcec7755b387ca7595">
+        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NzQ4NjUwNTEiLCJ0IjoxNjIwMDYwMTE4fQ==--5fca763efe874d9262e580fc00710d437082fae240c8e1255ec32f47c4c24f81">
         <a href="/notifications"
           class="Header-link notification-indicator position-relative tooltipped tooltipped-sw"
           
@@ -496,7 +496,7 @@
 
     </div>
         <div class="Header-item position-relative m-0 js-notice js-header-color-modes-promo" hidden>
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-notice-dismiss" action="/settings/dismiss-notice/header_color_modes_banner_ga" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Wnq6LjkaOM6kD4E1lIert+5Fk32RLk9d6YT8Wv/Gu9AoMVb240KY55V8jnNsKuShEhGl1QaWhiEIo90sDXQQSQ==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-notice-dismiss" action="/settings/dismiss-notice/header_color_modes_banner_ga" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="k1EEOoOuXXtIp9X+z02NeuOchSaEBWyXxX18jQ6j+pfhGujiWfb9UnnU2rg34MJsH8izjhO9peskWl37/BFRDg==" />
         <div class="Popover right-0 top-0 mt-4">
           <div class="Popover-message Popover-message--top-right text-left p-4 mt-3 Box color-shadow-large" style="width: 300px;">
             <h3 class="h4 color-text-primary d-flex flex-items-center">
@@ -601,7 +601,7 @@
         data-action="toggle:notifications-list-subscription-form#detailsToggled"
       >
 
-      <summary class="btn btn-sm rounded-right-0" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="ee5c95604af16ea9eabaf04b5bd81c016a38e22213d0317e5e516a919a7940fe" data-ga-click="Repository, click Watch settings, action:blob#show" aria-label="Notifications settings">
+      <summary class="btn btn-sm rounded-right-0" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="b20de79168382b02fd5d36f6b411eab6d2dcb334720cbb21e61a1bd2eeb973e0" data-ga-click="Repository, click Watch settings, action:blob#show" aria-label="Notifications settings">
           <span data-menu-button>
             <span
               hidden
@@ -645,7 +645,7 @@
             </header>
 
             <div class="SelectMenu-list">
-              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="gdnX9xru2CfUPS3jKMejUuhpY9GRLwpQ034Lvlvtv5tJ9UfRjgRaTOodZTl6wqBhTbNg8mtoRpD+S7P7jicVgQ==" />
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="mEtU3amGV/pRbmUem00q7gW+F/hzdXXeBg7xMhZ/TulQZ8T7PWzVkW9OLcTJSCndoGQU24kyOR4rO0l3w7Xk8w==" />
 
                 <input type="hidden" name="repository_id" value="363956363">
 
@@ -747,7 +747,7 @@
 
         <details-dialog class="notifications-component-dialog " data-target="notifications-list-subscription-form.customDialog" hidden>
           <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
-            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="IlwXaY2u9+JrJOQY+b0FarTH4pR7PuPymL/cb8KrRNzqcIdPGUR1iVUErMKruAZZER3ht4F5rzK1imQqF2Huxg==" />
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="1WbqQxUC9kRksE53jZwOKkeig7kP2XFPPKn5Z26zty4dSnplgeh0L1qQBq3fmQ0Z4niAmvWePY8RnEEiu3kdNA==" />
 
               <input type="hidden" name="repository_id" value="363956363">
 
@@ -885,9 +885,9 @@
 
   <li>
         <div class="d-block js-toggler-container js-social-container starring-container ">
-    <form class="starred js-social-form" action="/sitanshu422/vehicle-detection-and-counting/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="MUqDWgkUoDsWVNLPQ+LYXzamFX1hEMpwZ8yqS4csOQhXngDVe7J+zTJcNtQUocEsjWWJD6L/ShpOd3BUGuMR3w==" />
+    <form class="starred js-social-form" action="/sitanshu422/vehicle-detection-and-counting/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="bTXiv9fr0WQZsAjRM1jcUPmoZGaFAMphLY6Mh16YU10L4WEwpU0Pkj247MpkG8UjQmv4FEbvSgsENVaYw1d7ig==" />
       <input type="hidden" name="context" value="repository">
-      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar sitanshu422/vehicle-detection-and-counting" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="862cc7320ca6826774653467ea3782da650fc777554025698e780edc81d95a26" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-star-fill mr-1"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Unstar sitanshu422/vehicle-detection-and-counting" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="074751d55d61ba0d3500c822f1f497db370f7fe899e577d7477a32a4d6351f4d" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-star-fill mr-1"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
         <span>
           Unstar
 </span></button>        <a class="social-count js-social-count" href="/sitanshu422/vehicle-detection-and-counting/stargazers"
@@ -895,9 +895,9 @@
            0
         </a>
 </form>
-    <form class="unstarred js-social-form" action="/sitanshu422/vehicle-detection-and-counting/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="PqX5GhH1EJrlCtZzs5CLsyBMJYS3euyZBXnYet+aRYvA8blPynePbyySURC9d7gwLWaRBo9ujxX3xUyhOJmnYg==" />
+    <form class="unstarred js-social-form" action="/sitanshu422/vehicle-detection-and-counting/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="x0Yw+6SyHEEjQ0+aPmDMJ2cxJa1DUDWfqT2KM6aWghU5EnCufzCDtOrbyPkwh/+kahuRL3tEVhNbgR7oQZVg/A==" />
       <input type="hidden" name="context" value="repository">
-      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star sitanshu422/vehicle-detection-and-counting" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="a852bd6903334c7bdff351fbb2d36f4574c4bc470468f31e32161d19120ec755" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-star mr-1"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this repository" title="Star sitanshu422/vehicle-detection-and-counting" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="89568ee903ac2ea641644ebac6f145839e67b355b38641757972f03d9cc8fa75" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-star mr-1"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
         <span>
           Star
 </span></button>        <a class="social-count js-social-count" href="/sitanshu422/vehicle-detection-and-counting/stargazers"
@@ -909,8 +909,8 @@
   </li>
 
   <li>
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/sitanshu422/vehicle-detection-and-counting/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="ppZCQ1VAKLATMlWeeHjfW8LjvGOhqpa9exrDGKWFVFwmLChunFFgbddHHdj7HFy61LobRkDDwmSkIyQnHySPCA==" />
-              <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="d9f0e518a3e849767fa2c368f93b66220860f76a1b7cab35dfd419ef8dd63f44" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of sitanshu422/vehicle-detection-and-counting to your account" aria-label="Fork your own copy of sitanshu422/vehicle-detection-and-counting to your account">                <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/sitanshu422/vehicle-detection-and-counting/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="1FLZyTZoixaRNtMnlWcKKsOLorARrPbEnR4Epx2WINpU6LPk/3nDy1VDm2EWA4nL1dIFlfDFoh1CJ+OYpzf7jg==" />
+              <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="1724586e310a5ed2c9f917c838b9d9f9f20d0a65c3bb42b1c31c73d0d7e503fe" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" type="submit" title="Fork your own copy of sitanshu422/vehicle-detection-and-counting to your account" aria-label="Fork your own copy of sitanshu422/vehicle-detection-and-counting to your account">                <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
                 Fork
 </button></form>
       <a href="/sitanshu422/vehicle-detection-and-counting/network/members" class="social-count"
@@ -1059,9 +1059,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/sitanshu422/vehicle-detection-and-counting/blob/c34c48b60b946f5a5a1ad423e3007439cc9c626e/README.md">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/sitanshu422/vehicle-detection-and-counting/blob/c34c48b60b946f5a5a1ad423e3007439cc9c626e/vehiclecount.py">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v22:30b5c0088ec178e91e0edcc767f24d7b1e446d7ce92166c2760e5f659ea15ddd -->
+    <!-- blob contrib key: blob_contributors:v22:9f7feff87c6381eab5c31727c31455dd19f20c3c68c4ff69950eac43a9f519ff -->
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-wrap flex-md-nowrap flex-justify-between flex-md-justify-start">
       
@@ -1137,7 +1137,7 @@
             </div>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/{{ urlEncodedRefName }}/README.md" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/{{ urlEncodedRefName }}/vehiclecount.py" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
     <span class="flex-1 css-truncate css-truncate-overflow {{ isFilteringClass }}">{{ refName }}</span>
     <span hidden="{{ isNotDefault }}" class="Label Label--secondary flex-self-start">default</span>
@@ -1171,7 +1171,7 @@
             </template>
 
               <template data-target="ref-selector.itemTemplate">
-  <a href="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/{{ urlEncodedRefName }}/README.md" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
+  <a href="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/{{ urlEncodedRefName }}/vehiclecount.py" class="SelectMenu-item" role="menuitemradio" rel="nofollow" aria-checked="{{ isCurrent }}" data-index="{{ index }}">
     <svg class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
     <span class="flex-1 css-truncate css-truncate-overflow {{ isFilteringClass }}">{{ refName }}</span>
     <span hidden="{{ isNotDefault }}" class="Label Label--secondary flex-self-start">default</span>
@@ -1200,7 +1200,50 @@
 </div>
 
       <h2 id="blob-path" class="breadcrumb flex-auto flex-self-center min-width-0 text-normal mx-2 width-full width-md-auto flex-order-1 flex-md-order-none mt-3 mt-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/sitanshu422/vehicle-detection-and-counting"><span>vehicle-detection-and-counting</span></a></span></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment d-inline-block wb-break-all"><a data-pjax="true" href="/sitanshu422/vehicle-detection-and-counting"><span>vehicle-detection-and-counting</span></a></span></span><span class="separator">/</span><strong class="final-path">vehiclecount.py</strong>
+          <span class="separator">/</span><details class="details-reset details-overlay d-inline" id="jumpto-symbol-select-menu">
+  <summary class="btn-link Link--secondary css-truncate" aria-haspopup="true" data-hotkey="r" data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_blob_definitions&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_blob_definitions&quot;,&quot;repository_id&quot;:363956363,&quot;ref&quot;:&quot;main&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="515a6d9ba8ce4bbdc1e5ff631fdb4a2445484fb62d1a8682c9929b4716582ee3">
+      <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-code"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg>
+    <span data-menu-button>Jump to</span>
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="SelectMenu SelectMenu--hasFilter" role="menu">
+    <div class="SelectMenu-modal">
+      <header class="SelectMenu-header">
+        <span class="SelectMenu-title">Code definitions</span>
+        <button class="SelectMenu-closeButton" type="button" data-toggle-for="jumpto-symbol-select-menu">
+          <svg aria-label="Close menu" class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+        </button>
+      </header>
+        <div class="SelectMenu-filter">
+          <input
+            class="SelectMenu-input form-control js-filterable-field"
+            id="jumpto-symbols-filter-field"
+            type="text"
+            autocomplete="off"
+            spellcheck="false"
+            autofocus
+            placeholder="Filter definitions"
+            aria-label="Filter definitions">
+        </div>
+      <div class="SelectMenu-list">
+        <div data-filterable-for="jumpto-symbols-filter-field" data-filterable-type="substring">
+            <a class="SelectMenu-item d-flex flex-justify-between css-truncate" role="menuitemradio" aria-checked="false" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.navigate_to_blob_definition&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;navigate_to_blob_definition&quot;,&quot;repository_id&quot;:363956363,&quot;ref&quot;:&quot;main&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="df73760efb3a0306c85beec09a1e9e2c54ce4da3170856b917a71160f62fe96d" href="/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py#L18">
+              <svg class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+              <span class="flex-auto css-truncate-target" data-menu-button-text>pega_centro</span>
+              <span class="flex-auto d-flex flex-justify-end">Function</span>
+</a>        </div>
+      </div>
+      <footer class="SelectMenu-footer">
+        <div class="d-flex flex-justify-between">
+          Code navigation index up-to-date
+          <svg class="octicon octicon-dot-fill text-green" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+        </div>
+      </footer>
+    </div>
+  </details-menu>
+</details>
+
       </h2>
       <a href="/sitanshu422/vehicle-detection-and-counting/find/main"
             class="js-pjax-capture-input btn mr-2 d-none d-md-block"
@@ -1219,7 +1262,7 @@
 </summary>
   <div>          <ul class="dropdown-menu dropdown-menu-sw">
             <li class="d-block d-md-none">
-              <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="bf8807f840a9a9661be2daca6a56f7e13f91b8705d9013576c4b0d06ac57b861" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/sitanshu422/vehicle-detection-and-counting/find/main">
+              <a class="dropdown-item d-flex flex-items-baseline" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:363956363,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}" data-hydro-click-hmac="432e3f68e97744ca57878cda48ee1b1630d93613310fabcba632c549c411bd61" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/sitanshu422/vehicle-detection-and-counting/find/main">
                 <span class="flex-auto">Go to file</span>
                 <span class="text-small color-text-secondary" aria-hidden="true">T</span>
 </a>            </li>
@@ -1231,14 +1274,22 @@
                 </span>
               </button>
             </li>
+            <li data-toggle-for="blob-more-options-details">
+              <button type="button" data-toggle-for="jumpto-symbol-select-menu" class="btn-link dropdown-item">
+                <span class="d-flex flex-items-baseline">
+                  <span class="flex-auto">Go to definition</span>
+                  <span class="text-small color-text-secondary" aria-hidden="true">R</span>
+                </span>
+              </button>
+            </li>
             <li class="dropdown-divider" role="none"></li>
             <li>
-              <clipboard-copy value="README.md" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details">
+              <clipboard-copy value="vehiclecount.py" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details">
                 Copy path
               </clipboard-copy>
             </li>
             <li>
-              <clipboard-copy value="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/c34c48b60b946f5a5a1ad423e3007439cc9c626e/README.md" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details" >
+              <clipboard-copy value="https://github.com/sitanshu422/vehicle-detection-and-counting/blob/c34c48b60b946f5a5a1ad423e3007439cc9c626e/vehiclecount.py" class="dropdown-item cursor-pointer" data-toggle-for="blob-more-options-details" >
                 <span class="d-flex flex-items-baseline">
                   <span class="flex-auto">Copy permalink</span>
                 </span>
@@ -1251,74 +1302,17 @@
 
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-      
-  <div class="Box-header Box-header--blue Details js-details-container">
-      <div class="d-flex flex-items-center">
-        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
-          <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/sitanshu422/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sitanshu422"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/65463704?s=48&amp;v=4" width="24" height="24" alt="@sitanshu422" /></a>
-        </span>
-        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
-          <div class="css-truncate css-truncate-overflow">
-            <a class="text-bold Link--primary" rel="author" data-hovercard-type="user" data-hovercard-url="/users/sitanshu422/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/sitanshu422">sitanshu422</a>
-
-                <span class="markdown-title">
-                  <a data-pjax="true" title="Create README.md" class="Link--secondary" href="/sitanshu422/vehicle-detection-and-counting/commit/c34c48b60b946f5a5a1ad423e3007439cc9c626e">Create README.md</a>
-                </span>
-          </div>
-
-
-          <span class="ml-2">
-            <include-fragment accept="text/fragment+html" src="/sitanshu422/vehicle-detection-and-counting/commit/c34c48b60b946f5a5a1ad423e3007439cc9c626e/rollup?direction=e" class="d-inline"></include-fragment>
-          </span>
+      <include-fragment src="/sitanshu422/vehicle-detection-and-counting/contributors/main/vehiclecount.py" class="commit-loader">
+        <div class="Box-header Box-header--blue d-flex flex-items-center">
+          <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
+          <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
         </div>
-        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-text-secondary no-wrap">
-          <span class="d-none d-md-inline">
-            <span>Latest commit</span>
-            <a class="text-small text-mono Link--secondary" href="/sitanshu422/vehicle-detection-and-counting/commit/c34c48b60b946f5a5a1ad423e3007439cc9c626e" data-pjax>c34c48b</a>
-            <span itemprop="dateModified"><relative-time datetime="2021-05-03T14:40:12Z" class="no-wrap">May 3, 2021</relative-time></span>
-          </span>
 
-          <a data-pjax href="/sitanshu422/vehicle-detection-and-counting/commits/main/README.md" class="ml-3 no-wrap Link--primary no-underline">
-            <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-history text-gray"><path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path></svg>
-            <span class="d-none d-sm-inline">
-              <strong>History</strong>
-            </span>
-          </a>
+        <div class="Box-body d-flex flex-items-center" >
+          <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
+          <span class="color-text-danger h6 loader-error">Cannot retrieve contributors at this time</span>
         </div>
-      </div>
-
-  </div>
-
-  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
-    <details class="details-reset details-overlay details-overlay-dark lh-default color-text-primary float-left mr-3" id="blob_contributors_box">
-      <summary class="Link--primary">
-        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-people text-gray"><path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path></svg>
-        <strong>1</strong>
-        
-        contributor
-      </summary>
-      <details-dialog
-        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
-        aria-label="Users who have contributed to this file"
-        src="/sitanshu422/vehicle-detection-and-counting/contributors-list/main/README.md" preload>
-        <div class="Box-header">
-          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-            <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
-          </button>
-          <h3 class="Box-title">
-            Users who have contributed to this file
-          </h3>
-        </div>
-        <include-fragment>
-          <svg style="box-sizing: content-box; color: var(--color-icon-primary);" viewBox="0 0 16 16" fill="none" width="32" height="32" class="my-3 mx-auto d-block anim-rotate">
-  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg>
-        </include-fragment>
-      </details-dialog>
-    </details>
-  </div>
-    </div>
+</include-fragment>    </div>
 
 
 
@@ -1343,21 +1337,21 @@
 
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1">
 
-      2 lines (2 sloc)
+      68 lines (53 sloc)
       <span class="file-info-divider"></span>
-    148 Bytes
+    2.09 KB
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between hide-sm hide-md">
 
     <div class="BtnGroup">
-      <a href="/sitanshu422/vehicle-detection-and-counting/raw/main/README.md" id="raw-url" role="button" class="btn-sm btn BtnGroup-item">
+      <a href="/sitanshu422/vehicle-detection-and-counting/raw/main/vehiclecount.py" id="raw-url" role="button" class="btn-sm btn BtnGroup-item">
   
   Raw
   
 
 </a>
-        <a href="/sitanshu422/vehicle-detection-and-counting/blame/main/README.md" data-hotkey="b" role="button" class="js-update-url-with-hash btn-sm btn BtnGroup-item">
+        <a href="/sitanshu422/vehicle-detection-and-counting/blame/main/vehiclecount.py" data-hotkey="b" role="button" class="js-update-url-with-hash btn-sm btn BtnGroup-item">
   
   Blame
   
@@ -1374,13 +1368,13 @@
               <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path></svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/sitanshu422/vehicle-detection-and-counting/edit/main/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Vbbhvw6/QgZlMKaFEtSVa6paKgtyUbUl+BB1TJFvBoAvJGDgjr0hK8zLZ/16PNHWdFqk0LOd0FKDanPH7ozLVw==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/sitanshu422/vehicle-detection-and-counting/edit/main/vehiclecount.py" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="+JUrvdK3VzThP7T/yuL13MyCpf09Xdpp8WEjAapBcd7nih0Hs8BDZhObSpgilQeebJhq6p+Gz7ZiC4qZJA+e2w==" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
               <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16" class="octicon octicon-pencil"><path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path></svg>
             </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/sitanshu422/vehicle-detection-and-counting/delete/main/README.md" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="MBRBa3Tl/Q5UiIQo2nmymvGWn2hqViWJxL+T8E6SZZLWr50c89aS4PgqrC4IHnLFl+A0+C+iuEiHVS+PhRNMpA==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/sitanshu422/vehicle-detection-and-counting/delete/main/vehiclecount.py" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="TI0C/3BiiLRKf9OQ5UBw+5Uo3MK1F+VDP7k5AXXSpGZx8usEs1JoMRXAkXAUdEcHUcW4n1pSjrnxQRkfVv1FJQ==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Fork this project and delete the file" data-disable-with>
               <svg class="octicon octicon-trash" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z"></path></svg>
@@ -1404,22 +1398,22 @@
                 </a>
             </li>
           <li>
-            <a class="dropdown-item" href="/sitanshu422/vehicle-detection-and-counting/raw/main/README.md">
+            <a class="dropdown-item" href="/sitanshu422/vehicle-detection-and-counting/raw/main/vehiclecount.py">
               View raw
             </a>
           </li>
             <li>
-              <a class="dropdown-item" href="/sitanshu422/vehicle-detection-and-counting/blame/main/README.md">
+              <a class="dropdown-item" href="/sitanshu422/vehicle-detection-and-counting/blame/main/vehiclecount.py">
                 View blame
               </a>
             </li>
 
               <li class="dropdown-divider" role="none"></li>
               <li>
-                <a class="dropdown-item" href="/sitanshu422/vehicle-detection-and-counting/edit/main/README.md">Edit file</a>
+                <a class="dropdown-item" href="/sitanshu422/vehicle-detection-and-counting/edit/main/vehiclecount.py">Edit file</a>
               </li>
               <li>
-                <a class="dropdown-item menu-item-danger" href="/sitanshu422/vehicle-detection-and-counting/delete/main/README.md">Delete file</a>
+                <a class="dropdown-item menu-item-danger" href="/sitanshu422/vehicle-detection-and-counting/delete/main/vehiclecount.py">Delete file</a>
               </li>
         </ul>
       </details>
@@ -1427,10 +1421,317 @@
 </div>
 
 
-        <div id="readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0">
-    <article class="markdown-body entry-content container-lg" itemprop="text"><h1><a id="user-content-vehicle-detection-and-counting" class="anchor" aria-hidden="true" href="#vehicle-detection-and-counting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>vehicle-detection-and-counting</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/65463704/116890612-70cdeb00-ac4b-11eb-87bb-23415c240f3a.png"><img src="https://user-images.githubusercontent.com/65463704/116890612-70cdeb00-ac4b-11eb-87bb-23415c240f3a.png" alt="Untitled" style="max-width:100%;"></a></p>
-</article>
+      
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-python  gist-border-0">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-s1>cv2</span></td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class=pl-k>import</span> <span class=pl-s1>numpy</span> <span class=pl-k>as</span> <span class=pl-s1>np</span></td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class=pl-k>from</span> <span class=pl-s1>time</span> <span class=pl-k>import</span> <span class=pl-s1>sleep</span></td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>width_min</span><span class=pl-c1>=</span><span class=pl-c1>80</span> <span class=pl-c>#minimum rectangular width</span></td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>altura_min</span><span class=pl-c1>=</span><span class=pl-c1>80</span> <span class=pl-c>#Altura minima do retangulo</span></td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>offset</span><span class=pl-c1>=</span><span class=pl-c1>6</span> <span class=pl-c>#Erro allowed enter pixel  </span></td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>pos_line</span><span class=pl-c1>=</span><span class=pl-c1>550</span> <span class=pl-c>#Line position if count</span></td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>delay</span><span class=pl-c1>=</span> <span class=pl-c1>60</span> <span class=pl-c>#FPS do vídeo</span></td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>detec</span> <span class=pl-c1>=</span> []</td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>carros</span><span class=pl-c1>=</span> <span class=pl-c1>0</span></td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line">	</td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class=pl-k>def</span> <span class=pl-en>pega_centro</span>(<span class=pl-s1>x</span>, <span class=pl-s1>y</span>, <span class=pl-s1>w</span>, <span class=pl-s1>h</span>):</td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>x1</span> <span class=pl-c1>=</span> <span class=pl-en>int</span>(<span class=pl-s1>w</span> <span class=pl-c1>/</span> <span class=pl-c1>2</span>)</td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>y1</span> <span class=pl-c1>=</span> <span class=pl-en>int</span>(<span class=pl-s1>h</span> <span class=pl-c1>/</span> <span class=pl-c1>2</span>)</td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>cx</span> <span class=pl-c1>=</span> <span class=pl-s1>x</span> <span class=pl-c1>+</span> <span class=pl-s1>x1</span></td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>cy</span> <span class=pl-c1>=</span> <span class=pl-s1>y</span> <span class=pl-c1>+</span> <span class=pl-s1>y1</span></td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>return</span> <span class=pl-s1>cx</span>,<span class=pl-s1>cy</span></td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>cap</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-v>VideoCapture</span>(<span class=pl-s>&#39;video.mp4&#39;</span>)</td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>subtracao</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-s1>bgsegm</span>.<span class=pl-en>createBackgroundSubtractorMOG</span>()</td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line"><span class=pl-k>while</span> <span class=pl-c1>True</span>:</td>
+      </tr>
+      <tr>
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>ret</span> , <span class=pl-s1>frame1</span> <span class=pl-c1>=</span> <span class=pl-s1>cap</span>.<span class=pl-en>read</span>()</td>
+      </tr>
+      <tr>
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>tempo</span> <span class=pl-c1>=</span> <span class=pl-en>float</span>(<span class=pl-c1>1</span><span class=pl-c1>/</span><span class=pl-s1>delay</span>)</td>
+      </tr>
+      <tr>
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">    <span class=pl-en>sleep</span>(<span class=pl-s1>tempo</span>) </td>
+      </tr>
+      <tr>
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>grey</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-en>cvtColor</span>(<span class=pl-s1>frame1</span>,<span class=pl-s1>cv2</span>.<span class=pl-v>COLOR_BGR2GRAY</span>)</td>
+      </tr>
+      <tr>
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>blur</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-v>GaussianBlur</span>(<span class=pl-s1>grey</span>,(<span class=pl-c1>3</span>,<span class=pl-c1>3</span>),<span class=pl-c1>5</span>)</td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>img_sub</span> <span class=pl-c1>=</span> <span class=pl-s1>subtracao</span>.<span class=pl-en>apply</span>(<span class=pl-s1>blur</span>)</td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>dilat</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-en>dilate</span>(<span class=pl-s1>img_sub</span>,<span class=pl-s1>np</span>.<span class=pl-en>ones</span>((<span class=pl-c1>5</span>,<span class=pl-c1>5</span>)))</td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>kernel</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-en>getStructuringElement</span>(<span class=pl-s1>cv2</span>.<span class=pl-v>MORPH_ELLIPSE</span>, (<span class=pl-c1>5</span>, <span class=pl-c1>5</span>))</td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>dilatada</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-en>morphologyEx</span> (<span class=pl-s1>dilat</span>, <span class=pl-s1>cv2</span>. <span class=pl-v>MORPH_CLOSE</span> , <span class=pl-s1>kernel</span>)</td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>dilatada</span> <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-en>morphologyEx</span> (<span class=pl-s1>dilatada</span>, <span class=pl-s1>cv2</span>. <span class=pl-v>MORPH_CLOSE</span> , <span class=pl-s1>kernel</span>)</td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>contorno</span>,<span class=pl-s1>h</span><span class=pl-c1>=</span><span class=pl-s1>cv2</span>.<span class=pl-en>findContours</span>(<span class=pl-s1>dilatada</span>,<span class=pl-s1>cv2</span>.<span class=pl-v>RETR_TREE</span>,<span class=pl-s1>cv2</span>.<span class=pl-v>CHAIN_APPROX_SIMPLE</span>)</td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>cv2</span>.<span class=pl-en>line</span>(<span class=pl-s1>frame1</span>, (<span class=pl-c1>25</span>, <span class=pl-s1>pos_line</span>), (<span class=pl-c1>1200</span>, <span class=pl-s1>pos_line</span>), (<span class=pl-c1>255</span>,<span class=pl-c1>127</span>,<span class=pl-c1>0</span>), <span class=pl-c1>3</span>) </td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>for</span>(<span class=pl-s1>i</span>,<span class=pl-s1>c</span>) <span class=pl-c1>in</span> <span class=pl-en>enumerate</span>(<span class=pl-s1>contorno</span>):</td>
+      </tr>
+      <tr>
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line">        (<span class=pl-s1>x</span>,<span class=pl-s1>y</span>,<span class=pl-s1>w</span>,<span class=pl-s1>h</span>) <span class=pl-c1>=</span> <span class=pl-s1>cv2</span>.<span class=pl-en>boundingRect</span>(<span class=pl-s1>c</span>)</td>
+      </tr>
+      <tr>
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line">        <span class=pl-s1>validar_contorno</span> <span class=pl-c1>=</span> (<span class=pl-s1>w</span> <span class=pl-c1>&gt;=</span> <span class=pl-s1>width_min</span>) <span class=pl-c1>and</span> (<span class=pl-s1>h</span> <span class=pl-c1>&gt;=</span> <span class=pl-s1>altura_min</span>)</td>
+      </tr>
+      <tr>
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line">        <span class=pl-k>if</span> <span class=pl-c1>not</span> <span class=pl-s1>validar_contorno</span>:</td>
+      </tr>
+      <tr>
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line">            <span class=pl-k>continue</span></td>
+      </tr>
+      <tr>
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="LC48" class="blob-code blob-code-inner js-file-line">        <span class=pl-s1>cv2</span>.<span class=pl-en>rectangle</span>(<span class=pl-s1>frame1</span>,(<span class=pl-s1>x</span>,<span class=pl-s1>y</span>),(<span class=pl-s1>x</span><span class=pl-c1>+</span><span class=pl-s1>w</span>,<span class=pl-s1>y</span><span class=pl-c1>+</span><span class=pl-s1>h</span>),(<span class=pl-c1>0</span>,<span class=pl-c1>255</span>,<span class=pl-c1>0</span>),<span class=pl-c1>2</span>)        </td>
+      </tr>
+      <tr>
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="LC49" class="blob-code blob-code-inner js-file-line">        <span class=pl-s1>centro</span> <span class=pl-c1>=</span> <span class=pl-en>pega_centro</span>(<span class=pl-s1>x</span>, <span class=pl-s1>y</span>, <span class=pl-s1>w</span>, <span class=pl-s1>h</span>)</td>
+      </tr>
+      <tr>
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="LC50" class="blob-code blob-code-inner js-file-line">        <span class=pl-s1>detec</span>.<span class=pl-en>append</span>(<span class=pl-s1>centro</span>)</td>
+      </tr>
+      <tr>
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line">        <span class=pl-s1>cv2</span>.<span class=pl-en>circle</span>(<span class=pl-s1>frame1</span>, <span class=pl-s1>centro</span>, <span class=pl-c1>4</span>, (<span class=pl-c1>0</span>, <span class=pl-c1>0</span>,<span class=pl-c1>255</span>), <span class=pl-c1>-</span><span class=pl-c1>1</span>)</td>
+      </tr>
+      <tr>
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="LC52" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="LC53" class="blob-code blob-code-inner js-file-line">        <span class=pl-k>for</span> (<span class=pl-s1>x</span>,<span class=pl-s1>y</span>) <span class=pl-c1>in</span> <span class=pl-s1>detec</span>:</td>
+      </tr>
+      <tr>
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line">            <span class=pl-k>if</span> <span class=pl-s1>y</span><span class=pl-c1>&lt;</span>(<span class=pl-s1>pos_line</span><span class=pl-c1>+</span><span class=pl-s1>offset</span>) <span class=pl-c1>and</span> <span class=pl-s1>y</span><span class=pl-c1>&gt;</span>(<span class=pl-s1>pos_line</span><span class=pl-c1>-</span><span class=pl-s1>offset</span>):</td>
+      </tr>
+      <tr>
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="LC55" class="blob-code blob-code-inner js-file-line">                <span class=pl-s1>carros</span><span class=pl-c1>+=</span><span class=pl-c1>1</span></td>
+      </tr>
+      <tr>
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="LC56" class="blob-code blob-code-inner js-file-line">                <span class=pl-s1>cv2</span>.<span class=pl-en>line</span>(<span class=pl-s1>frame1</span>, (<span class=pl-c1>25</span>, <span class=pl-s1>pos_line</span>), (<span class=pl-c1>1200</span>, <span class=pl-s1>pos_line</span>), (<span class=pl-c1>0</span>,<span class=pl-c1>127</span>,<span class=pl-c1>255</span>), <span class=pl-c1>3</span>)  </td>
+      </tr>
+      <tr>
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="LC57" class="blob-code blob-code-inner js-file-line">                <span class=pl-s1>detec</span>.<span class=pl-en>remove</span>((<span class=pl-s1>x</span>,<span class=pl-s1>y</span>))</td>
+      </tr>
+      <tr>
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="LC58" class="blob-code blob-code-inner js-file-line">                <span class=pl-en>print</span>(<span class=pl-s>&quot;car is detected : &quot;</span><span class=pl-c1>+</span><span class=pl-en>str</span>(<span class=pl-s1>carros</span>))        </td>
+      </tr>
+      <tr>
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="LC59" class="blob-code blob-code-inner js-file-line">       </td>
+      </tr>
+      <tr>
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="LC60" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>cv2</span>.<span class=pl-en>putText</span>(<span class=pl-s1>frame1</span>, <span class=pl-s>&quot;VEHICLE COUNT : &quot;</span><span class=pl-c1>+</span><span class=pl-en>str</span>(<span class=pl-s1>carros</span>), (<span class=pl-c1>450</span>, <span class=pl-c1>70</span>), <span class=pl-s1>cv2</span>.<span class=pl-v>FONT_HERSHEY_SIMPLEX</span>, <span class=pl-c1>2</span>, (<span class=pl-c1>0</span>, <span class=pl-c1>0</span>, <span class=pl-c1>255</span>),<span class=pl-c1>5</span>)</td>
+      </tr>
+      <tr>
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="LC61" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>cv2</span>.<span class=pl-en>imshow</span>(<span class=pl-s>&quot;Video Original&quot;</span> , <span class=pl-s1>frame1</span>)</td>
+      </tr>
+      <tr>
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="LC62" class="blob-code blob-code-inner js-file-line">    <span class=pl-s1>cv2</span>.<span class=pl-en>imshow</span>(<span class=pl-s>&quot;Detectar&quot;</span>,<span class=pl-s1>dilatada</span>)</td>
+      </tr>
+      <tr>
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="LC63" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="LC64" class="blob-code blob-code-inner js-file-line">    <span class=pl-k>if</span> <span class=pl-s1>cv2</span>.<span class=pl-en>waitKey</span>(<span class=pl-c1>1</span>) <span class=pl-c1>==</span> <span class=pl-c1>27</span>:</td>
+      </tr>
+      <tr>
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="LC65" class="blob-code blob-code-inner js-file-line">        <span class=pl-k>break</span></td>
+      </tr>
+      <tr>
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="LC66" class="blob-code blob-code-inner js-file-line">    </td>
+      </tr>
+      <tr>
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="LC67" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>cv2</span>.<span class=pl-en>destroyAllWindows</span>()</td>
+      </tr>
+      <tr>
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line"><span class=pl-s1>cap</span>.<span class=pl-en>release</span>()</td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 color-bg-primary border color-border-tertiary rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2" style="width:185px">
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;">
+            Copy lines
+          </clipboard-copy>
+        </li>
+        <li>
+          <clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;">
+            Copy permalink
+          </clipboard-copy>
+        </li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/sitanshu422/vehicle-detection-and-counting/blame/c34c48b60b946f5a5a1ad423e3007439cc9c626e/vehiclecount.py">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/sitanshu422/vehicle-detection-and-counting/issues/new">Reference in new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
   </div>
 
     </div>
@@ -1451,10 +1752,10 @@
      hidden
      data-tagsearch-url="/sitanshu422/vehicle-detection-and-counting/find-definition"
      data-tagsearch-ref="main"
-     data-tagsearch-path="README.md"
-     data-tagsearch-lang="Markdown"
-     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:363956363,&quot;ref&quot;:&quot;main&quot;,&quot;language&quot;:&quot;Markdown&quot;,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/README.md&quot;,&quot;user_id&quot;:74865051}}"
-     data-hydro-click-hmac="0262a18a90e2160b45549956332d36790f70b5192c138ea7210f11f5cbb96c9b">
+     data-tagsearch-path="vehiclecount.py"
+     data-tagsearch-lang="Python"
+     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:363956363,&quot;ref&quot;:&quot;main&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;originating_url&quot;:&quot;https://github.com/sitanshu422/vehicle-detection-and-counting/blob/main/vehiclecount.py&quot;,&quot;user_id&quot;:74865051}}"
+     data-hydro-click-hmac="8eb30ed59900f001dcdefbd974d76cb2cba2c4220fd67cd5a7bc10ccef632eb9">
   <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mb-4 mx-auto Box color-shadow-large">
     <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto" style="will-change:transform;">
     </div>
